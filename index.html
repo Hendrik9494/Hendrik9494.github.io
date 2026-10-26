@@ -26,7 +26,7 @@ nav{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;
 <section class="card hero">
 <div class="k">HYROX Vorbereitung · 7 Wochen</div>
 <h1>Race Build<br>13.12.2026</h1>
-<p class="sub">3 Home-Einheiten pro Woche + 1 HYROX-Kurs am Wochenende. Laufziel: <b>4:30–4:40 min/km</b>.</p>
+<p class="sub">3 Home-Einheiten pro Woche + HYROX-Kurse an ausgewählten Wochenenden. Laufziel: <b>4:30–4:40 min/km</b>.</p>
 <div class="metrics">
 <div class="metric"><small>Race Pace</small><b>4:30–4:40/km</b></div>
 <div class="metric"><small>Home</small><b>Mo · Mi · Fr</b></div>
@@ -43,7 +43,7 @@ nav{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;
 
 <div class="rules">
 <div class="rule"><b>Qualität vor Ego:</b> Pace sauber treffen, kein unnötiger Endspurt.</div>
-<div class="rule"><b>Freitag vor Samstag:</b> Bei Samstag-Kurs immer die leichtere Freitag-Option wählen.</div>
+<div class="rule"><b>Freitag vor Kurs:</b> Vor einem Wochenendkurs wird reduziert; kursfreie Wochen nutzen wir gezielt für einen stärkeren Hybrid-Reiz.</div>
 <div class="rule"><b>Kraft:</b> meist RPE 7–8, keine Wiederholungen bis zum Muskelversagen.</div>
 <div class="rule"><b>Laufband:</b> COROS steuert die Zeit, das Laufband die Geschwindigkeit.</div>
 </div>
@@ -57,37 +57,37 @@ const W=[
 ["Montag","Laufband · 3×4:35","45–55 min","6–7",["6–10 Min locker einlaufen","3 × 4:35 Min @ 4:30–4:40/km (12,9–13,3 km/h)","Pause: jeweils 1:18 Min @ 6:30/km (9,2 km/h)","8–10 Min locker auslaufen"],"Heute zählt Kontrolle. Kein vierter schneller Block.",""],
 ["Mittwoch","Kraft A · Basics","55–60 min","7",["Kniebeuge 4×6 @ RPE 7 · 2:30–3:00 Pause","Rumänisches Kreuzheben 3×8 @ RPE 7 · 2:00 Pause","KH-Bankdrücken 3×8–10 · 90 s","Einarmiges KH-Rudern 3×10/Seite · 60 s","Bulgarian Split Squat 2×8/Bein · 90 s","Plank 3×45–60 s"],"1–2 Wiederholungen Reserve lassen.",""],
 ["Freitag","Easy Run + Strides","50–55 min","4–5",["35–40 Min locker, ca. 5:30–5:50/km","4 × 20 s bis ca. 4:20/km","Pause: jeweils 80–100 s sehr locker","5 Min auslaufen"],"","Bei Samstag-Kurs: nur 30–35 Min locker ohne Steigerungen."],
-["Wochenende","HYROX Kurs","ca. 60 min","7",["Technik und saubere Übergänge priorisieren","Sled / Lunges / Burpees nicht maximal","Kein zusätzlicher Finisher"],"Erster Kurs im Block: nicht als Test nutzen.",""]
+["Wochenende","Kein HYROX-Kurs","Regeneration","–",["Samstag/Sonntag frei","Optional 30–45 Min sehr locker Rudern oder Assault Bike in Zone 2","Spaziergang und kurze Mobilität"],"Kein zusätzlicher harter Reiz in Woche 1.",""]
 ]},
 {w:2,d:"02.11.–08.11.",t:"Volumen aufbauen",f:"Race Pace stabilisieren",s:[
 ["Montag","Laufband · 4×4:37 Race Pace","50–60 min","7",["10 Min locker einlaufen","4 × 4:37 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 1:18 Min locker @ ca. 6:20–6:40/km","10 Min locker auslaufen"],"Alle vier Wiederholungen gleichmäßig.",""],
 ["Mittwoch","Kraft B · Hüfte & Tragen","55–60 min","7–8",["Hip Thrust 4×8 · 2:00","Sitzendes KH-Schulterdrücken 4×6–8 · 2:00","Langhantelrudern 4×8 · 2:00","Reverse Lunges 3×8/Bein · 90 s","Farmer Carry 4×30–40 m · 60–90 s","Wadenheben 3×12/Bein","Side Plank 3×40 s/Seite"],"Farmer Carry schwer, aber ohne Griffversagen.",""],
-["Freitag","Aerobic + kurze Schwelle","50–55 min","5–6",["25 Min locker @ 5:25–5:45/km","3 × 5 Min @ 4:50–4:55/km","Pause: jeweils 2:00 Min locker","5–8 Min auslaufen"],"","Bei Samstag-Kurs: nur 40 Min locker."],
-["Wochenende","HYROX Kurs","ca. 60 min","7–8",["Kurs regulär absolvieren","Schlitten: Technik und Fußposition beachten","Laufanteile nicht sprinten"],"Gesamtqualität statt maximaler Stationszeiten.",""]
+["Freitag · 06.11.","Reduziert vor HYROX","45–50 min","5–6",["25 Min locker @ 5:25–5:45/km","2 × 5 Min @ 4:50–4:55/km","Pause: jeweils 2:00 Min locker","9 Min auslaufen"],"Sonntag ist der HYROX-Hauptreiz.",""],
+["Sonntag · 08.11.","HYROX Kurs","ca. 60 min","7–8",["Kurs regulär absolvieren","Schlitten: Technik und Fußposition beachten","Laufanteile nicht sprinten"],"Gesamtqualität statt maximaler Stationszeiten.",""]
 ]},
 {w:3,d:"09.11.–15.11.",t:"Längere Intervalle",f:"Tempohärte & Kraft",s:[
 ["Montag","Laufband · 3×6:56 Race Pace","55–60 min","7–8",["10–12 Min locker einlaufen","3 × 6:56 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 2:30 Min sehr locker","8–10 Min auslaufen"],"Dritter Block wie der erste.",""],
 ["Mittwoch","Kraft A · Progression","55–60 min","7–8",["Kniebeuge 4×5","RDL 4×6","KH-Bankdrücken 4×8","KH-Rudern 4×8/Seite","Bulgarian Split Squat 3×8/Bein","Farmer Carry 3×40 m","Core 2–3 Sätze"],"Nur steigern, wenn die Belastung gut vertragen wird.",""],
-["Freitag","Hybrid light","50–60 min","7",["3 Runden","800 m @ 4:40–4:45/km","500 m Rudern zügig","12 Burpees","16 Walking Lunges gesamt","Pause: 2:00 Min locker zwischen den Runden"],"","Bei Samstag-Kurs: 30–35 Min Zone 2 auf Bike oder Laufband."],
-["Wochenende","HYROX Kurs","ca. 60 min","8",["Laufabschnitte im Wettkampf-Rhythmus","Stationen technisch sauber teilen","Keine maximale Gesamtzeit jagen"],"",""]
+["Freitag · 13.11.","HYROX Brick · Hauptreiz","55–60 min","7–8",["3 Runden","1.000 m @ 4:40/km","500 m Rudern zügig, nicht maximal","12 Burpees","20 Walking Lunges gesamt","40 m Farmer Carry schwer","Pause: 2:00 Min locker zwischen den Runden","Nach Runde 3 zusätzlich 1.000 m @ 4:35–4:40/km"],"Kursfreies Wochenende: das ist der spezifische HYROX-Reiz dieser Woche.",""],
+["Wochenende","Kein HYROX-Kurs","Regeneration","–",["Samstag/Sonntag frei","Optional 30–45 Min sehr locker Rudern oder Assault Bike in Zone 2","Keine zweite harte Hybrid-Einheit"],"Der Freitag übernimmt diese Woche den HYROX-spezifischen Reiz.",""]
 ]},
 {w:4,d:"16.11.–22.11.",t:"Spezifischer werden",f:"Race Pace unter Vorermüdung",s:[
 ["Montag","Laufband · 4×6:56 Race Pace","55–60 min","8",["10 Min locker einlaufen","4 × 6:56 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 2:00 Min lockeres Traben","8 Min auslaufen"],"Wenn RPE >8 vor Intervall 4: auf 4:40 begrenzen.",""],
 ["Mittwoch","Kraft B · schwer, kompakt","55–60 min","8",["Kniebeuge 4×5","Hip Thrust 4×6","Sitzendes KH-Schulterdrücken 3×8","Langhantelrudern 4×8","Reverse Lunges 3×8/Bein","Farmer Carry 4×40 m","Plank 3×60 s"],"Keine Zusatzübungen.",""],
-["Freitag","Race Brick","50–60 min","7–8",["3 Runden","1.000 m @ 4:40/km","500 m Rudern","20 Walking Lunges gesamt","10 Burpees","Pause: 1:30 Min locker"],"","Bei Samstag-Kurs: 30 Min locker + 4×20 s Race Pace."],
-["Wochenende","HYROX Kurs","ca. 60 min","8",["Darf fordernd sein","Laufpace nicht schneller erzwingen","Sled und Wall Balls als Technikfokus"],"",""]
+["Freitag · 20.11.","Easy Run + Race-Pace-Strides","40–45 min","3–4",["30–35 Min sehr locker @ ca. 5:30–5:50/km","4 × 20 s @ 4:35–4:40/km","Pause: jeweils 80–100 s sehr locker","5 Min Mobilität"],"Am Samstag folgt der HYROX-Kurs. Beine bewusst frisch halten.",""],
+["Samstag · 21.11.","HYROX Kurs","ca. 60 min","8",["Darf fordernd sein","Laufpace nicht schneller erzwingen","Sled und Wall Balls als Technikfokus"],"Der Kurs ist der Hauptreiz des Wochenendes.",""]
 ]},
 {w:5,d:"23.11.–29.11.",t:"Race Build",f:"Pace 4:30–4:40 festigen",s:[
 ["Montag","Laufband · 5×4:33 Race Pace","50–60 min","8",["10 Min locker einlaufen","5 × 4:33 Min @ 4:30–4:35/km (13,1–13,3 km/h)","Pause: jeweils 1:30 Min locker traben","10 Min auslaufen"],"Schneller als 4:30 bringt aktuell keinen Zusatznutzen.",""],
 ["Mittwoch","Kraft · Volumen reduzieren","50–55 min","7",["Kniebeuge 3×5","RDL 3×6","KH-Bankdrücken 3×8","Langhantelrudern 3×8","Reverse Lunges 2×8/Bein","Farmer Carry 3×40 m","Core 2 Sätze"],"Kraft erhalten, Ermüdung reduzieren.",""],
-["Freitag","Progressionslauf","50–55 min","6–7",["15 Min locker","10 Min @ 5:00/km","10 Min @ 4:50/km","8 Min @ 4:40/km","5–8 Min locker"],"","Bei Samstag-Kurs: letzten 8-Min-Block weglassen."],
-["Wochenende","HYROX Kurs · hart","ca. 60 min","8–9",["Wettkampfnäher trainieren","Übergänge zügig halten","Nicht bis zum völligen Muskelversagen"],"",""]
+["Freitag · 27.11.","Progressionslauf · reduziert","45–50 min","6",["15 Min locker","10 Min @ 5:00/km","10 Min @ 4:50/km","5 Min @ 4:40/km","8 Min locker"],"Sonntag folgt der HYROX-Kurs; der schnelle Abschluss bleibt bewusst kurz.",""],
+["Sonntag · 29.11.","HYROX Kurs · hart","ca. 60 min","8–9",["Wettkampfnäher trainieren","Übergänge zügig halten","Nicht bis zum völligen Muskelversagen"],"Letzter wirklich harter Kurs im Block.",""]
 ]},
 {w:6,d:"30.11.–06.12.",t:"Peak",f:"Letzter großer spezifischer Reiz",s:[
 ["Montag","Laufband · 3×9:15 Race Pace","55–60 min","8",["10–12 Min locker einlaufen","3 × 9:15 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 2:30 Min locker","8 Min auslaufen"],"Wichtigste Laufeinheit des Blocks.",""],
 ["Mittwoch","Kraft · Maintenance","45–55 min","7",["Kniebeuge 3×4","Hip Thrust 3×6","KH-Bankdrücken 3×6–8","Rudern 3×8","Reverse Lunges 2×6/Bein","Farmer Carry 3×30 m","Kurzer Core-Block"],"Keine neue Bestleistung.",""],
-["Freitag","Mini HYROX Brick","45–55 min","7–8",["4 Runden","1.000 m @ 4:35–4:40/km","250 m Rudern zügig","10 Burpees","12 Walking Lunges gesamt","Pause: 1:00–1:15 Min locker"],"","Bei hartem Wochenendkurs: nur 3 Runden oder 35 Min locker."],
-["Wochenende","HYROX Kurs · kontrolliert","ca. 60 min","7–8",["Letzter Kurs mit echtem Trainingsreiz","Keine volle Race-Simulation mehr","Technik vor Ermüdung"],"",""]
+["Freitag · 04.12.","Laufband · 3×3 Min Race Pace","45–50 min","5–6",["30 Min locker @ ca. 5:30–5:50/km","3 × 3 Min @ 4:35–4:40/km","Pause: jeweils 2:00 Min sehr locker","5 Min auslaufen"],"Der Kurs am Sonntag ist der letzte größere spezifische Reiz.",""],
+["Sonntag · 06.12.","HYROX Kurs · kontrolliert","ca. 60 min","7–8",["Letzter Kurs mit echtem Trainingsreiz","Keine volle Race-Simulation mehr","Technik vor Ermüdung"],"Danach beginnt das Tapering.",""]
 ]},
 {w:7,d:"07.12.–13.12.",t:"Race Week",f:"Frisch werden, Schärfe behalten",s:[
 ["Montag","Laufband · 3×3:34 Schärfe","40–45 min","6–7",["10 Min locker","3 × 3:34 Min @ 4:25–4:30/km (13,3–13,6 km/h)","Pause: jeweils 2:00 Min sehr locker","10 Min auslaufen"],"Kontrolliert schnell, nicht hart.",""],
