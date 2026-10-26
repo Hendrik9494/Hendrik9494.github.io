@@ -13,11 +13,11 @@
 <style>
 :root{--bg:#0d0f12;--p:#15181d;--p2:#1b1f25;--t:#f4f6f8;--m:#a7adb6;--l:#2a2f37;--a:#d9ff3f;--g:#79d98a;--w:#ffcc66}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#0b0d10,#111419 45%,#0d0f12);color:var(--t);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
-.wrap{max-width:980px;margin:auto;padding:18px 14px 60px}.card,.session{background:var(--p);border:1px solid var(--l);border-radius:18px}.hero{padding:20px}.k{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--a);font-weight:800}h1{font-size:clamp(34px,8vw,56px);line-height:1;margin:5px 0 10px;letter-spacing:-.04em}.sub,.muted{color:var(--m)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.metric{background:var(--p2);border:1px solid var(--l);border-radius:13px;padding:11px}.metric small{display:block;color:var(--m)}.metric b{font-size:17px}.prog{height:9px;background:#252a31;border-radius:999px;overflow:hidden;margin:9px 0}.prog div{height:100%;background:var(--a);width:0}
+.wrap{max-width:980px;margin:auto;padding:18px 14px 60px}.card,.session{background:var(--p);border:1px solid var(--l);border-radius:18px}.hero{padding:20px}.k{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--a);font-weight:800}h1{font-size:clamp(34px,8vw,56px);line-height:1;margin:5px 0 10px;letter-spacing:-.04em}.sub,.muted{color:var(--m)}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:15px}.metric{background:var(--p2);border:1px solid var(--l);border-radius:13px;padding:11px}.metric small{display:block;color:var(--m)}.metric b{font-size:17px}.prog{height:9px;background:#252a31;border-radius:999px;overflow:hidden;margin:9px 0}.prog div{height:100%;background:var(--a);width:0}
 nav{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;margin:16px 0}button{background:var(--p2);border:1px solid var(--l);color:var(--t);border-radius:999px;padding:9px 12px;font-weight:700}button.active{background:var(--a);color:#111;border-color:var(--a)}button:disabled{opacity:.35}.weekbuttons{display:flex;gap:7px;overflow:auto}.weekbuttons button{white-space:nowrap}.counter{text-align:center;color:var(--m);font-size:12px;margin-top:5px}
 .week{display:none}.week.active{display:block}.weekhead{display:flex;justify-content:space-between;gap:12px;align-items:end;margin:18px 0 10px}.weekhead h2{margin:0;font-size:28px}.weekmeta{text-align:right;color:var(--m);font-size:12px}.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}.overview button{text-align:left;border-radius:13px}.overview span{display:block;color:var(--m);font-size:11px}.overview b{font-size:12px}.overview .done{border-color:var(--g)}
-.session{margin:9px 0;overflow:hidden}.session>summary{list-style:none;cursor:pointer;padding:14px 46px 14px 14px;position:relative}.session>summary::-webkit-details-marker{display:none}.session>summary:after{content:"＋";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--a);font-size:23px}.session[open]>summary:after{content:"−"}.session[open]>summary{border-bottom:1px solid var(--l)}.day{color:var(--a);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.title{font-size:19px;font-weight:800;margin:3px 0}.pills{display:flex;gap:7px;flex-wrap:wrap}.pill{font-size:11px;border:1px solid var(--l);border-radius:999px;padding:3px 7px;color:#dfe3e8}.body{padding:10px 14px 15px}.body li{margin:6px 0}.hint{color:var(--m);font-size:13px}.lightbox{border-left:4px solid var(--w);padding:9px 11px;background:#181712;border-radius:9px;margin:10px 0}.check{display:flex;align-items:center;gap:8px;margin-top:10px}.check input{width:auto}.log{display:grid;grid-template-columns:1fr 1fr 2fr;gap:8px;margin-top:10px}label{font-size:11px;color:var(--m)}input,textarea{width:100%;margin-top:4px;background:#0f1216;border:1px solid var(--l);color:var(--t);border-radius:9px;padding:8px}textarea{min-height:55px}.doneMark>summary{box-shadow:inset 3px 0 0 var(--g)}.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0}.rule{background:var(--p2);border:1px solid var(--l);border-radius:12px;padding:11px;font-size:13px}.foot{color:var(--m);font-size:11px;margin-top:28px}
-@media(max-width:680px){.metrics,.overview,.rules{grid-template-columns:1fr 1fr}.log{grid-template-columns:1fr}.weekhead{align-items:start;flex-direction:column}.weekmeta{text-align:left}}
+.session{margin:9px 0;overflow:hidden}.session>summary{list-style:none;cursor:pointer;padding:14px 46px 14px 14px;position:relative}.session>summary::-webkit-details-marker{display:none}.session>summary:after{content:"＋";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--a);font-size:23px}.session[open]>summary:after{content:"−"}.session[open]>summary{border-bottom:1px solid var(--l)}.day{color:var(--a);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.title{font-size:19px;font-weight:800;margin:3px 0}.pills{display:flex;gap:7px;flex-wrap:wrap}.pill{font-size:11px;border:1px solid var(--l);border-radius:999px;padding:3px 7px;color:#dfe3e8}.body{padding:10px 14px 15px}.body li{margin:6px 0}.hint{color:var(--m);font-size:13px}.lightbox{border-left:4px solid var(--w);padding:9px 11px;background:#181712;border-radius:9px;margin:10px 0}.check{display:flex;align-items:center;gap:8px;margin-top:10px}.check input{width:auto}.log{display:grid;grid-template-columns:1fr 1fr 2fr;gap:8px;margin-top:10px}label{font-size:11px;color:var(--m)}input,textarea{width:100%;margin-top:4px;background:#0f1216;border:1px solid var(--l);color:var(--t);border-radius:9px;padding:8px}textarea{min-height:55px}.doneMark>summary{box-shadow:inset 3px 0 0 var(--g)}.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0}.rule{background:var(--p2);border:1px solid var(--l);border-radius:12px;padding:11px;font-size:13px}.today{margin:14px 0;padding:16px;border-color:#39422b}.today h2{margin:3px 0 8px;font-size:24px}.todaySteps{margin:10px 0 12px;padding-left:20px}.todayActions{display:flex;gap:8px;flex-wrap:wrap}.speed{color:var(--a);font-weight:750;white-space:nowrap}.tmctl{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-top:13px;padding:10px 12px;background:var(--p2);border:1px solid var(--l);border-radius:13px}.tmctl small{color:var(--m)}.strengthlog{margin-top:15px;border-top:1px solid var(--l);padding-top:13px}.strengthlog h4{margin:0 0 4px}.strengthhelp{font-size:11px;color:var(--m);margin-bottom:9px}.strength-row{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:8px;align-items:end;padding:9px 0;border-top:1px solid #232830}.strength-row:first-of-type{border-top:0}.strength-name{font-size:13px;font-weight:750}.prev{display:block;font-size:10px;color:var(--m);font-weight:400;margin-top:3px}.strength-row input{margin-top:3px}.foot{color:var(--m);font-size:11px;margin-top:28px}
+@media(max-width:680px){.metrics,.overview,.rules{grid-template-columns:1fr 1fr}.log{grid-template-columns:1fr}.strength-row{grid-template-columns:1fr 1fr}.strength-name{grid-column:1/-1}.weekhead{align-items:start;flex-direction:column}.weekmeta{text-align:left}}
 @media(max-width:430px){.metrics,.overview,.rules{grid-template-columns:1fr}nav{grid-template-columns:1fr 1fr}.weekbuttons{grid-column:1/-1;grid-row:1}}
 </style>
 </head>
@@ -31,9 +31,12 @@ nav{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;
 <div class="metric"><small>Race Pace</small><b>4:30–4:40/km</b></div>
 <div class="metric"><small>Home</small><b>Mo · Mi · Fr</b></div>
 <div class="metric"><small>Wochenende</small><b>HYROX Kurs</b></div>
+<div class="metric"><small>Countdown</small><b id="countdown">–</b></div>
 </div>
+<div class="tmctl"><div><b>Laufband-Modus</b><br><small>zeigt Pace zusätzlich in km/h</small></div><button id="tmToggle" type="button">AN</button></div>
 <div style="margin-top:15px"><small class="muted">Fortschritt</small><div class="prog"><div id="bar"></div></div><small class="muted" id="progress">0 von 28 Einheiten</small></div>
 </section>
+<section class="card today" id="todayCard"></section>
 
 <nav>
 <button id="prev">← Vorherige</button>
@@ -98,7 +101,80 @@ const W=[
 ];
 
 let cw=1;
+let tmOn=localStorage.getItem("hyrox26_treadmill")!=="0";
 const k=id=>"hyrox26_"+id;
+const DATES={
+"w1s0":"2026-10-26","w1s1":"2026-10-28","w1s2":"2026-10-30","w1s3":"2026-10-31",
+"w2s0":"2026-11-02","w2s1":"2026-11-04","w2s2":"2026-11-06","w2s3":"2026-11-08",
+"w3s0":"2026-11-09","w3s1":"2026-11-11","w3s2":"2026-11-13","w3s3":"2026-11-14",
+"w4s0":"2026-11-16","w4s1":"2026-11-18","w4s2":"2026-11-20","w4s3":"2026-11-21",
+"w5s0":"2026-11-23","w5s1":"2026-11-25","w5s2":"2026-11-27","w5s3":"2026-11-29",
+"w6s0":"2026-11-30","w6s1":"2026-12-02","w6s2":"2026-12-04","w6s3":"2026-12-06",
+"w7s0":"2026-12-07","w7s1":"2026-12-09","w7s2":"2026-12-11","w7s3":"2026-12-13"
+};
+function paceSpeed(sec){return (3600/sec).toFixed(1).replace(".",",")}
+function renderStep(text){
+ let clean=text.replace(/\s*\(\d+,\d+(?:–\d+,\d+)? km\/h\)/g,"");
+ if(!tmOn)return clean;
+ return clean.replace(/(\d):(\d{2})(?:–(\d):(\d{2}))?(?: min)?\/km/g,(m,a,b,c,d)=>{
+   const s1=(+a)*60+(+b);
+   if(c!==undefined){
+     const s2=(+c)*60+(+d), lo=Math.min(3600/s1,3600/s2), hi=Math.max(3600/s1,3600/s2);
+     return m+' <span class="speed">('+lo.toFixed(1).replace(".",",")+'–'+hi.toFixed(1).replace(".",",")+' km/h)</span>';
+   }
+   return m+' <span class="speed">('+paceSpeed(s1)+' km/h)</span>';
+ });
+}
+function canonicalEx(n){
+ return n.replace("Rumänisches Kreuzheben","RDL")
+         .replace("Einarmiges KH-Rudern","KH-Rudern")
+         .replace(/^Rudern$/,"Langhantelrudern")
+         .replace(/\s+/g," ").trim();
+}
+function exerciseName(line){
+ let n=line.split(/\s+\d+×/)[0].split(" · ")[0].replace(/\s*@.*$/,"").trim();
+ return canonicalEx(n);
+}
+function strengthBlock(id,s){
+ if(!s[1].includes("Kraft"))return "";
+ let rows=s[4].map((line,i)=>{
+   const n=exerciseName(line), base=id+"_ex"+i;
+   return '<div class="strength-row" data-ex="'+n.replace(/"/g,"&quot;")+'"><div class="strength-name">'+n+'<span class="prev">Noch kein Vergleich</span></div><label>Gewicht je Satz (kg)<input type="text" inputmode="decimal" placeholder="z. B. 60 / 65 / 65" id="'+base+'_weight"></label><label>Wdh. je Satz<input type="text" inputmode="numeric" placeholder="z. B. 6 / 6 / 6" id="'+base+'_reps"></label></div>';
+ }).join("");
+ return '<div class="strengthlog"><h4>Kraftprotokoll</h4><div class="strengthhelp">Bei Kurzhanteln Gewicht pro Hantel eintragen. Bei Planks/Carry kannst du im Wdh.-Feld Zeit bzw. Meter notieren.</div>'+rows+'</div>';
+}
+function sessionData(id){
+ const m=id.match(/^w(\d+)s(\d+)$/);if(!m)return null;
+ const w=W.find(x=>x.w===+m[1]);return w?{w,s:w.s[+m[2]]}:null;
+}
+function fmtDate(iso){const d=new Date(iso+"T12:00:00");return d.toLocaleDateString("de-DE",{weekday:"long",day:"2-digit",month:"2-digit"})}
+function renderToday(){
+ const el=document.getElementById("todayCard"), now=new Date(), today=now.getFullYear()+"-"+String(now.getMonth()+1).padStart(2,"0")+"-"+String(now.getDate()).padStart(2,"0");
+ let entries=Object.entries(DATES).sort((a,b)=>a[1].localeCompare(b[1])), chosen=entries.find(x=>x[1]===today), exact=true;
+ if(!chosen){chosen=entries.find(x=>x[1]>today);exact=false}
+ if(!chosen){el.innerHTML='<div class="k">Race Build</div><h2>Wettkampf abgeschlossen</h2><p class="muted">Der Trainingsblock bis 13.12.2026 ist beendet.</p>';return}
+ const [id,date]=chosen, x=sessionData(id), s=x.s;
+ el.innerHTML='<div class="k">'+(exact?"Heute":"Nächste Einheit · "+fmtDate(date))+'</div><h2>'+s[1]+'</h2><div class="pills"><span class="pill">'+s[0]+'</span><span class="pill">'+s[2]+'</span><span class="pill">RPE '+s[3]+'</span></div><ol class="todaySteps">'+s[4].map(v=>"<li>"+renderStep(v)+"</li>").join("")+'</ol><div class="todayActions"><button type="button" onclick="openSession(\''+id+'\')">Einheit öffnen</button></div>';
+}
+function openSession(id){
+ const m=id.match(/^w(\d+)s/);if(m)show(+m[1],false);
+ const e=document.getElementById(id);if(e){e.open=true;e.scrollIntoView({behavior:"smooth",block:"start"})}
+}
+function setCountdown(){
+ const now=new Date(), race=new Date("2026-12-13T00:00:00"), diff=Math.ceil((race-now)/86400000), el=document.getElementById("countdown");
+ el.textContent=diff>1?diff+" Tage":diff===1?"1 Tag":diff===0?"RACE DAY":"vorbei";
+}
+function syncTreadmillButton(){const b=document.getElementById("tmToggle");if(b){b.textContent=tmOn?"AN":"AUS";b.classList.toggle("active",tmOn)}}
+function toggleTreadmill(){save();tmOn=!tmOn;localStorage.setItem("hyrox26_treadmill",tmOn?"1":"0");render();setCountdown();syncTreadmillButton()}
+function updateStrengthPrev(){
+ const latest={};
+ document.querySelectorAll(".strength-row").forEach(row=>{
+   const ex=row.dataset.ex, ins=row.querySelectorAll("input"), w=ins[0]?.value.trim()||"", r=ins[1]?.value.trim()||"", p=row.querySelector(".prev");
+   if(latest[ex])p.textContent="Zuletzt: "+(latest[ex].w||"–")+" kg · "+(latest[ex].r||"–");
+   else p.textContent="Noch kein Vergleich";
+   if(w||r)latest[ex]={w,r};
+ });
+}
 function current(){let d=Math.floor((new Date()-new Date("2026-10-26T00:00:00"))/86400000);return Math.min(7,Math.max(1,Math.floor(d/7)+1))}
 function render(){
  const root=document.getElementById("weeks"), wb=document.getElementById("weekbuttons");root.innerHTML="";wb.innerHTML="";
@@ -109,21 +185,21 @@ function render(){
   x.s.forEach((s,i)=>{
    let id="w"+x.w+"s"+i, ob=document.createElement("button");ob.innerHTML="<span>"+s[0]+"</span><b>"+s[1]+"</b>";ob.dataset.id=id;ob.onclick=()=>{let e=document.getElementById(id);e.open=true;e.scrollIntoView({behavior:"smooth",block:"center"})};sec.querySelector(".overview").appendChild(ob);
    let d=document.createElement("details");d.className="session";d.id=id;
-   d.innerHTML='<summary><div class="day">'+s[0]+'</div><div class="title">'+s[1]+'</div><div class="pills"><span class="pill">'+s[2]+'</span><span class="pill">RPE '+s[3]+'</span></div></summary><div class="body"><ol>'+s[4].map(v=>"<li>"+v+"</li>").join("")+'</ol>'+(s[6]?'<div class="lightbox"><b>Leichte Option:</b> '+s[6]+'</div>':"")+(s[5]?'<p class="hint"><b>Coach:</b> '+s[5]+'</p>':"")+'<div class="check"><input type="checkbox" id="'+id+'_done"><label for="'+id+'_done">Absolviert</label></div><div class="log"><label>RPE<input type="number" min="1" max="10" id="'+id+'_rpe"></label><label>Belastung 0–10<input type="number" min="0" max="10" id="'+id+'_knee"></label><label>Notiz<textarea id="'+id+'_note"></textarea></label></div></div>';
+   d.innerHTML='<summary><div class="day">'+s[0]+'</div><div class="title">'+s[1]+'</div><div class="pills"><span class="pill">'+s[2]+'</span><span class="pill">RPE '+s[3]+'</span></div></summary><div class="body"><ol>'+s[4].map(v=>"<li>"+renderStep(v)+"</li>").join("")+'</ol>'+(s[6]?'<div class="lightbox"><b>Leichte Option:</b> '+s[6]+'</div>':"")+(s[5]?'<p class="hint"><b>Coach:</b> '+s[5]+'</p>':"")+strengthBlock(id,s)+'<div class="check"><input type="checkbox" id="'+id+'_done"><label for="'+id+'_done">Absolviert</label></div><div class="log"><label>RPE<input type="number" min="1" max="10" id="'+id+'_rpe"></label><label>Knie/Schmerz 0–10<input type="number" min="0" max="10" id="'+id+'_knee"></label><label>Notiz<textarea id="'+id+'_note"></textarea></label></div></div>';
    sec.querySelector(".list").appendChild(d);
   });root.appendChild(sec);
  });
  document.querySelectorAll("input,textarea").forEach(e=>{let v=localStorage.getItem(k(e.id));if(v!==null){e.type==="checkbox"?e.checked=v==="1":e.value=v}e.oninput=e.onchange=save});
- cw=current();show(cw,false);sync();
+ cw=current();show(cw,false);sync();renderToday();setCountdown();syncTreadmillButton();
 }
 function save(){document.querySelectorAll("input,textarea").forEach(e=>localStorage.setItem(k(e.id),e.type==="checkbox"?(e.checked?"1":"0"):e.value));sync()}
 function sync(){
  let boxes=[...document.querySelectorAll('input[type="checkbox"]')],n=boxes.filter(x=>x.checked).length;document.getElementById("bar").style.width=(n/boxes.length*100)+"%";document.getElementById("progress").textContent=n+" von "+boxes.length+" Einheiten";
  document.querySelectorAll(".session").forEach(s=>s.classList.toggle("doneMark",document.getElementById(s.id+"_done").checked));
- document.querySelectorAll(".overview button").forEach(b=>b.classList.toggle("done",document.getElementById(b.dataset.id+"_done").checked));
+ document.querySelectorAll(".overview button").forEach(b=>b.classList.toggle("done",document.getElementById(b.dataset.id+"_done").checked));updateStrengthPrev();
 }
 function show(n,scroll=true){cw=Math.max(1,Math.min(7,n));document.querySelectorAll(".week").forEach(e=>e.classList.toggle("active",+e.dataset.w===cw));[...document.querySelectorAll(".weekbuttons button")].forEach((e,i)=>e.classList.toggle("active",i===cw-1));document.getElementById("counter").textContent="Woche "+cw+" von 7 · "+W[cw-1].f;document.getElementById("prev").disabled=cw===1;document.getElementById("next").disabled=cw===7;if(scroll)document.querySelector('.week[data-w="'+cw+'"]').scrollIntoView({behavior:"smooth"})}
-document.getElementById("prev").onclick=()=>show(cw-1);document.getElementById("next").onclick=()=>show(cw+1);render();
+document.getElementById("prev").onclick=()=>show(cw-1);document.getElementById("next").onclick=()=>show(cw+1);document.getElementById("tmToggle").onclick=toggleTreadmill;render();
 if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js"));
 </script>
 </body></html>
