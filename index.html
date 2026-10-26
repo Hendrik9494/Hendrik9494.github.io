@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>HYROX Plan · 13.12.2026</title>
+<meta name="theme-color" content="#0d0f12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="HYROX Plan">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<style>
+:root{--bg:#0d0f12;--p:#15181d;--p2:#1b1f25;--t:#f4f6f8;--m:#a7adb6;--l:#2a2f37;--a:#d9ff3f;--g:#79d98a;--w:#ffcc66}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#0b0d10,#111419 45%,#0d0f12);color:var(--t);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.45;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}
+.wrap{max-width:980px;margin:auto;padding:18px 14px 60px}.card,.session{background:var(--p);border:1px solid var(--l);border-radius:18px}.hero{padding:20px}.k{font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--a);font-weight:800}h1{font-size:clamp(34px,8vw,56px);line-height:1;margin:5px 0 10px;letter-spacing:-.04em}.sub,.muted{color:var(--m)}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:15px}.metric{background:var(--p2);border:1px solid var(--l);border-radius:13px;padding:11px}.metric small{display:block;color:var(--m)}.metric b{font-size:17px}.prog{height:9px;background:#252a31;border-radius:999px;overflow:hidden;margin:9px 0}.prog div{height:100%;background:var(--a);width:0}
+nav{display:grid;grid-template-columns:auto 1fr auto;gap:8px;align-items:center;margin:16px 0}button{background:var(--p2);border:1px solid var(--l);color:var(--t);border-radius:999px;padding:9px 12px;font-weight:700}button.active{background:var(--a);color:#111;border-color:var(--a)}button:disabled{opacity:.35}.weekbuttons{display:flex;gap:7px;overflow:auto}.weekbuttons button{white-space:nowrap}.counter{text-align:center;color:var(--m);font-size:12px;margin-top:5px}
+.week{display:none}.week.active{display:block}.weekhead{display:flex;justify-content:space-between;gap:12px;align-items:end;margin:18px 0 10px}.weekhead h2{margin:0;font-size:28px}.weekmeta{text-align:right;color:var(--m);font-size:12px}.overview{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-bottom:10px}.overview button{text-align:left;border-radius:13px}.overview span{display:block;color:var(--m);font-size:11px}.overview b{font-size:12px}.overview .done{border-color:var(--g)}
+.session{margin:9px 0;overflow:hidden}.session>summary{list-style:none;cursor:pointer;padding:14px 46px 14px 14px;position:relative}.session>summary::-webkit-details-marker{display:none}.session>summary:after{content:"＋";position:absolute;right:16px;top:50%;transform:translateY(-50%);color:var(--a);font-size:23px}.session[open]>summary:after{content:"−"}.session[open]>summary{border-bottom:1px solid var(--l)}.day{color:var(--a);font-size:11px;text-transform:uppercase;letter-spacing:.12em;font-weight:800}.title{font-size:19px;font-weight:800;margin:3px 0}.pills{display:flex;gap:7px;flex-wrap:wrap}.pill{font-size:11px;border:1px solid var(--l);border-radius:999px;padding:3px 7px;color:#dfe3e8}.body{padding:10px 14px 15px}.body li{margin:6px 0}.hint{color:var(--m);font-size:13px}.lightbox{border-left:4px solid var(--w);padding:9px 11px;background:#181712;border-radius:9px;margin:10px 0}.check{display:flex;align-items:center;gap:8px;margin-top:10px}.check input{width:auto}.log{display:grid;grid-template-columns:1fr 1fr 2fr;gap:8px;margin-top:10px}label{font-size:11px;color:var(--m)}input,textarea{width:100%;margin-top:4px;background:#0f1216;border:1px solid var(--l);color:var(--t);border-radius:9px;padding:8px}textarea{min-height:55px}.doneMark>summary{box-shadow:inset 3px 0 0 var(--g)}.rules{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin:14px 0}.rule{background:var(--p2);border:1px solid var(--l);border-radius:12px;padding:11px;font-size:13px}.foot{color:var(--m);font-size:11px;margin-top:28px}
+@media(max-width:680px){.metrics,.overview,.rules{grid-template-columns:1fr 1fr}.log{grid-template-columns:1fr}.weekhead{align-items:start;flex-direction:column}.weekmeta{text-align:left}}
+@media(max-width:430px){.metrics,.overview,.rules{grid-template-columns:1fr}nav{grid-template-columns:1fr 1fr}.weekbuttons{grid-column:1/-1;grid-row:1}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<section class="card hero">
+<div class="k">HYROX Vorbereitung · 7 Wochen</div>
+<h1>Race Build<br>13.12.2026</h1>
+<p class="sub">3 Home-Einheiten pro Woche + 1 HYROX-Kurs am Wochenende. Laufziel: <b>4:30–4:40 min/km</b>.</p>
+<div class="metrics">
+<div class="metric"><small>Race Pace</small><b>4:30–4:40/km</b></div>
+<div class="metric"><small>Home</small><b>Mo · Mi · Fr</b></div>
+<div class="metric"><small>Wochenende</small><b>HYROX Kurs</b></div>
+</div>
+<div style="margin-top:15px"><small class="muted">Fortschritt</small><div class="prog"><div id="bar"></div></div><small class="muted" id="progress">0 von 28 Einheiten</small></div>
+</section>
+
+<nav>
+<button id="prev">← Vorherige</button>
+<div><div class="weekbuttons" id="weekbuttons"></div><div class="counter" id="counter"></div></div>
+<button id="next">Nächste →</button>
+</nav>
+
+<div class="rules">
+<div class="rule"><b>Qualität vor Ego:</b> Pace sauber treffen, kein unnötiger Endspurt.</div>
+<div class="rule"><b>Freitag vor Samstag:</b> Bei Samstag-Kurs immer die leichtere Freitag-Option wählen.</div>
+<div class="rule"><b>Kraft:</b> meist RPE 7–8, keine Wiederholungen bis zum Muskelversagen.</div>
+<div class="rule"><b>Laufband:</b> COROS steuert die Zeit, das Laufband die Geschwindigkeit.</div>
+</div>
+<div id="weeks"></div>
+<div class="foot">Daten werden lokal auf diesem Gerät gespeichert. Nach dem ersten Laden funktioniert die App auch offline.</div>
+</div>
+
+<script>
+const W=[
+{w:1,d:"26.10.–01.11.",t:"Wiedereinstieg",f:"Rhythmus & Belastbarkeit",s:[
+["Montag","Laufband · 3×4:35","45–55 min","6–7",["6–10 Min locker einlaufen","3 × 4:35 Min @ 4:30–4:40/km (12,9–13,3 km/h)","Pause: jeweils 1:18 Min @ 6:30/km (9,2 km/h)","8–10 Min locker auslaufen"],"Heute zählt Kontrolle. Kein vierter schneller Block.",""],
+["Mittwoch","Kraft A · Basics","55–60 min","7",["Kniebeuge 4×6 @ RPE 7 · 2:30–3:00 Pause","Rumänisches Kreuzheben 3×8 @ RPE 7 · 2:00 Pause","KH-Bankdrücken 3×8–10 · 90 s","Einarmiges KH-Rudern 3×10/Seite · 60 s","Bulgarian Split Squat 2×8/Bein · 90 s","Plank 3×45–60 s"],"1–2 Wiederholungen Reserve lassen.",""],
+["Freitag","Easy Run + Strides","50–55 min","4–5",["35–40 Min locker, ca. 5:30–5:50/km","4 × 20 s bis ca. 4:20/km","Pause: jeweils 80–100 s sehr locker","5 Min auslaufen"],"","Bei Samstag-Kurs: nur 30–35 Min locker ohne Steigerungen."],
+["Wochenende","HYROX Kurs","ca. 60 min","7",["Technik und saubere Übergänge priorisieren","Sled / Lunges / Burpees nicht maximal","Kein zusätzlicher Finisher"],"Erster Kurs im Block: nicht als Test nutzen.",""]
+]},
+{w:2,d:"02.11.–08.11.",t:"Volumen aufbauen",f:"Race Pace stabilisieren",s:[
+["Montag","Laufband · 4×4:37 Race Pace","50–60 min","7",["10 Min locker einlaufen","4 × 4:37 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 1:18 Min locker @ ca. 6:20–6:40/km","10 Min locker auslaufen"],"Alle vier Wiederholungen gleichmäßig.",""],
+["Mittwoch","Kraft B · Hüfte & Tragen","55–60 min","7–8",["Hip Thrust 4×8 · 2:00","Sitzendes KH-Schulterdrücken 4×6–8 · 2:00","Langhantelrudern 4×8 · 2:00","Reverse Lunges 3×8/Bein · 90 s","Farmer Carry 4×30–40 m · 60–90 s","Wadenheben 3×12/Bein","Side Plank 3×40 s/Seite"],"Farmer Carry schwer, aber ohne Griffversagen.",""],
+["Freitag","Aerobic + kurze Schwelle","50–55 min","5–6",["25 Min locker @ 5:25–5:45/km","3 × 5 Min @ 4:50–4:55/km","Pause: jeweils 2:00 Min locker","5–8 Min auslaufen"],"","Bei Samstag-Kurs: nur 40 Min locker."],
+["Wochenende","HYROX Kurs","ca. 60 min","7–8",["Kurs regulär absolvieren","Schlitten: Technik und Fußposition beachten","Laufanteile nicht sprinten"],"Gesamtqualität statt maximaler Stationszeiten.",""]
+]},
+{w:3,d:"09.11.–15.11.",t:"Längere Intervalle",f:"Tempohärte & Kraft",s:[
+["Montag","Laufband · 3×6:56 Race Pace","55–60 min","7–8",["10–12 Min locker einlaufen","3 × 6:56 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 2:30 Min sehr locker","8–10 Min auslaufen"],"Dritter Block wie der erste.",""],
+["Mittwoch","Kraft A · Progression","55–60 min","7–8",["Kniebeuge 4×5","RDL 4×6","KH-Bankdrücken 4×8","KH-Rudern 4×8/Seite","Bulgarian Split Squat 3×8/Bein","Farmer Carry 3×40 m","Core 2–3 Sätze"],"Nur steigern, wenn die Belastung gut vertragen wird.",""],
+["Freitag","Hybrid light","50–60 min","7",["3 Runden","800 m @ 4:40–4:45/km","500 m Rudern zügig","12 Burpees","16 Walking Lunges gesamt","Pause: 2:00 Min locker zwischen den Runden"],"","Bei Samstag-Kurs: 30–35 Min Zone 2 auf Bike oder Laufband."],
+["Wochenende","HYROX Kurs","ca. 60 min","8",["Laufabschnitte im Wettkampf-Rhythmus","Stationen technisch sauber teilen","Keine maximale Gesamtzeit jagen"],"",""]
+]},
+{w:4,d:"16.11.–22.11.",t:"Spezifischer werden",f:"Race Pace unter Vorermüdung",s:[
+["Montag","Laufband · 4×6:56 Race Pace","55–60 min","8",["10 Min locker einlaufen","4 × 6:56 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 2:00 Min lockeres Traben","8 Min auslaufen"],"Wenn RPE >8 vor Intervall 4: auf 4:40 begrenzen.",""],
+["Mittwoch","Kraft B · schwer, kompakt","55–60 min","8",["Kniebeuge 4×5","Hip Thrust 4×6","Sitzendes KH-Schulterdrücken 3×8","Langhantelrudern 4×8","Reverse Lunges 3×8/Bein","Farmer Carry 4×40 m","Plank 3×60 s"],"Keine Zusatzübungen.",""],
+["Freitag","Race Brick","50–60 min","7–8",["3 Runden","1.000 m @ 4:40/km","500 m Rudern","20 Walking Lunges gesamt","10 Burpees","Pause: 1:30 Min locker"],"","Bei Samstag-Kurs: 30 Min locker + 4×20 s Race Pace."],
+["Wochenende","HYROX Kurs","ca. 60 min","8",["Darf fordernd sein","Laufpace nicht schneller erzwingen","Sled und Wall Balls als Technikfokus"],"",""]
+]},
+{w:5,d:"23.11.–29.11.",t:"Race Build",f:"Pace 4:30–4:40 festigen",s:[
+["Montag","Laufband · 5×4:33 Race Pace","50–60 min","8",["10 Min locker einlaufen","5 × 4:33 Min @ 4:30–4:35/km (13,1–13,3 km/h)","Pause: jeweils 1:30 Min locker traben","10 Min auslaufen"],"Schneller als 4:30 bringt aktuell keinen Zusatznutzen.",""],
+["Mittwoch","Kraft · Volumen reduzieren","50–55 min","7",["Kniebeuge 3×5","RDL 3×6","KH-Bankdrücken 3×8","Langhantelrudern 3×8","Reverse Lunges 2×8/Bein","Farmer Carry 3×40 m","Core 2 Sätze"],"Kraft erhalten, Ermüdung reduzieren.",""],
+["Freitag","Progressionslauf","50–55 min","6–7",["15 Min locker","10 Min @ 5:00/km","10 Min @ 4:50/km","8 Min @ 4:40/km","5–8 Min locker"],"","Bei Samstag-Kurs: letzten 8-Min-Block weglassen."],
+["Wochenende","HYROX Kurs · hart","ca. 60 min","8–9",["Wettkampfnäher trainieren","Übergänge zügig halten","Nicht bis zum völligen Muskelversagen"],"",""]
+]},
+{w:6,d:"30.11.–06.12.",t:"Peak",f:"Letzter großer spezifischer Reiz",s:[
+["Montag","Laufband · 3×9:15 Race Pace","55–60 min","8",["10–12 Min locker einlaufen","3 × 9:15 Min @ 4:35–4:40/km (12,9–13,1 km/h)","Pause: jeweils 2:30 Min locker","8 Min auslaufen"],"Wichtigste Laufeinheit des Blocks.",""],
+["Mittwoch","Kraft · Maintenance","45–55 min","7",["Kniebeuge 3×4","Hip Thrust 3×6","KH-Bankdrücken 3×6–8","Rudern 3×8","Reverse Lunges 2×6/Bein","Farmer Carry 3×30 m","Kurzer Core-Block"],"Keine neue Bestleistung.",""],
+["Freitag","Mini HYROX Brick","45–55 min","7–8",["4 Runden","1.000 m @ 4:35–4:40/km","250 m Rudern zügig","10 Burpees","12 Walking Lunges gesamt","Pause: 1:00–1:15 Min locker"],"","Bei hartem Wochenendkurs: nur 3 Runden oder 35 Min locker."],
+["Wochenende","HYROX Kurs · kontrolliert","ca. 60 min","7–8",["Letzter Kurs mit echtem Trainingsreiz","Keine volle Race-Simulation mehr","Technik vor Ermüdung"],"",""]
+]},
+{w:7,d:"07.12.–13.12.",t:"Race Week",f:"Frisch werden, Schärfe behalten",s:[
+["Montag","Laufband · 3×3:34 Schärfe","40–45 min","6–7",["10 Min locker","3 × 3:34 Min @ 4:25–4:30/km (13,3–13,6 km/h)","Pause: jeweils 2:00 Min sehr locker","10 Min auslaufen"],"Kontrolliert schnell, nicht hart.",""],
+["Mittwoch","Kraft · Aktivierung","35–45 min","5–6",["Kniebeuge 2×5 leicht","Hip Thrust 2×6 leicht","KH-Bankdrücken 2×8","Rudern 2×8","Reverse Lunges 2×6/Bein","Plank 2×40 s"],"Alles mit deutlicher Reserve.",""],
+["Freitag","Shakeout","25–35 min","3–4",["20–25 Min sehr locker","4 × 20 s @ Race Pace","Pause: jeweils 80–100 s locker","Kurz mobilisieren"],"Danach mehr Energie als vorher.",""],
+["Sonntag","RACE DAY · 13.12.","HYROX","Race",["Lauf 1–2 eher 4:35–4:40/km","Nicht vom Starttempo mitreißen lassen","Stationen sauber 50:50 teilen","Ab Lauf 6 entscheiden, ob Richtung 4:30/km beschleunigt wird"],"Kein HYROX-Kurs an diesem Wochenende.",""]
+]}
+];
+
+let cw=1;
+const k=id=>"hyrox26_"+id;
+function current(){let d=Math.floor((new Date()-new Date("2026-10-26T00:00:00"))/86400000);return Math.min(7,Math.max(1,Math.floor(d/7)+1))}
+function render(){
+ const root=document.getElementById("weeks"), wb=document.getElementById("weekbuttons");root.innerHTML="";wb.innerHTML="";
+ W.forEach(x=>{
+  let b=document.createElement("button");b.textContent="Woche "+x.w;b.onclick=()=>show(x.w);wb.appendChild(b);
+  let sec=document.createElement("section");sec.className="week";sec.dataset.w=x.w;
+  sec.innerHTML='<div class="weekhead"><div><div class="k">Woche '+x.w+'</div><h2>'+x.t+'</h2></div><div class="weekmeta">'+x.d+'<br>'+x.f+'</div></div><div class="overview"></div><div class="list"></div>';
+  x.s.forEach((s,i)=>{
+   let id="w"+x.w+"s"+i, ob=document.createElement("button");ob.innerHTML="<span>"+s[0]+"</span><b>"+s[1]+"</b>";ob.dataset.id=id;ob.onclick=()=>{let e=document.getElementById(id);e.open=true;e.scrollIntoView({behavior:"smooth",block:"center"})};sec.querySelector(".overview").appendChild(ob);
+   let d=document.createElement("details");d.className="session";d.id=id;
+   d.innerHTML='<summary><div class="day">'+s[0]+'</div><div class="title">'+s[1]+'</div><div class="pills"><span class="pill">'+s[2]+'</span><span class="pill">RPE '+s[3]+'</span></div></summary><div class="body"><ol>'+s[4].map(v=>"<li>"+v+"</li>").join("")+'</ol>'+(s[6]?'<div class="lightbox"><b>Leichte Option:</b> '+s[6]+'</div>':"")+(s[5]?'<p class="hint"><b>Coach:</b> '+s[5]+'</p>':"")+'<div class="check"><input type="checkbox" id="'+id+'_done"><label for="'+id+'_done">Absolviert</label></div><div class="log"><label>RPE<input type="number" min="1" max="10" id="'+id+'_rpe"></label><label>Belastung 0–10<input type="number" min="0" max="10" id="'+id+'_knee"></label><label>Notiz<textarea id="'+id+'_note"></textarea></label></div></div>';
+   sec.querySelector(".list").appendChild(d);
+  });root.appendChild(sec);
+ });
+ document.querySelectorAll("input,textarea").forEach(e=>{let v=localStorage.getItem(k(e.id));if(v!==null){e.type==="checkbox"?e.checked=v==="1":e.value=v}e.oninput=e.onchange=save});
+ cw=current();show(cw,false);sync();
+}
+function save(){document.querySelectorAll("input,textarea").forEach(e=>localStorage.setItem(k(e.id),e.type==="checkbox"?(e.checked?"1":"0"):e.value));sync()}
+function sync(){
+ let boxes=[...document.querySelectorAll('input[type="checkbox"]')],n=boxes.filter(x=>x.checked).length;document.getElementById("bar").style.width=(n/boxes.length*100)+"%";document.getElementById("progress").textContent=n+" von "+boxes.length+" Einheiten";
+ document.querySelectorAll(".session").forEach(s=>s.classList.toggle("doneMark",document.getElementById(s.id+"_done").checked));
+ document.querySelectorAll(".overview button").forEach(b=>b.classList.toggle("done",document.getElementById(b.dataset.id+"_done").checked));
+}
+function show(n,scroll=true){cw=Math.max(1,Math.min(7,n));document.querySelectorAll(".week").forEach(e=>e.classList.toggle("active",+e.dataset.w===cw));[...document.querySelectorAll(".weekbuttons button")].forEach((e,i)=>e.classList.toggle("active",i===cw-1));document.getElementById("counter").textContent="Woche "+cw+" von 7 · "+W[cw-1].f;document.getElementById("prev").disabled=cw===1;document.getElementById("next").disabled=cw===7;if(scroll)document.querySelector('.week[data-w="'+cw+'"]').scrollIntoView({behavior:"smooth"})}
+document.getElementById("prev").onclick=()=>show(cw-1);document.getElementById("next").onclick=()=>show(cw+1);render();
+if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js"));
+</script>
+</body></html>
