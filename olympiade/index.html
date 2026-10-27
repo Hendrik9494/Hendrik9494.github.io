@@ -30,7 +30,8 @@
 .fun-award{display:flex;text-align:left;align-items:center;gap:16px;padding:15px 8px;border-bottom:1px solid #e9eded}
 .fun-award:last-child{border:0}.fun-award-icon{font-size:32px;width:50px;text-align:center}
 .fun-award strong{display:block;font-size:17px}.fun-award small{display:block;color:var(--muted);margin-top:4px;line-height:1.4}
-.fun-burst{position:absolute;inset:0;pointer-events:none;z-index:-1}
+.fun-burst{position:absolute;inset:0;pointer-events:none;z-index:0}
+.fun-card>:not(.fun-burst){position:relative;z-index:1}
 .fun-burst span{position:absolute;top:-10%;left:var(--x);width:9px;height:18px;background:var(--c);opacity:0;transform:rotate(var(--r));animation:funfall 2.1s ease-out forwards;animation-delay:var(--d)}
 @keyframes funfall{0%{opacity:1;transform:translateY(0) rotate(0)}85%{opacity:1}100%{opacity:0;transform:translateY(450px) rotate(650deg)}}
 @media (prefers-reduced-motion:reduce){.fun-burst span{animation:none;display:none}}
@@ -161,7 +162,7 @@ document.addEventListener('input',e=>{const el=e.target;if(el.matches('input[dat
 document.addEventListener('change',e=>{const el=e.target;if(el.id==='activeTournament'){if(state.tournaments.some(t=>t.id===el.value)){state.activeId=el.value;save();go('home')}return}if(el.dataset.valuePlayer){changeValue(el);return}if(el.id==='lowWins'){let t=active(),g=t.games.find(x=>x.id===ui.gameId);if(!g)return;g.lowWins=el.checked;save();render();return}});
 document.getElementById('import-file').addEventListener('change',async e=>{let f=e.target.files[0];e.target.value='';if(!f)return;try{let data=JSON.parse(await f.text());if(!data||!Array.isArray(data.tournaments)||!data.tournaments.length||data.tournaments.some(t=>!t.id||!t.name||!Array.isArray(t.players)||t.players.length!==8||!Array.isArray(t.games)))throw new Error('Ungültiges Sicherungsformat');if(!confirm('Sicherung importieren? Der bisherige Bestand ALLER Olympiaden auf diesem iPad wird überschrieben.'))return;let activeId=data.tournaments.some(t=>t.id===data.activeId)?data.activeId:data.tournaments[0].id;state={version:1,activeId,tournaments:data.tournaments,fun:{...defaultFun(),...(data.fun&&typeof data.fun==='object'?data.fun:{})}};save();go('home');toast('Sicherung erfolgreich importiert.')}catch(err){toast('Import fehlgeschlagen: '+err.message)}});
 document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
-window.addEventListener('storage',e=>{if(e.key!==KEY||!e.newValue)return;try{let n=JSON.parse(e.newValue);if(n?.tournaments?.length){state=n;render()}}catch(e){}});
+window.addEventListener('storage',e=>{if(e.key!==KEY||!e.newValue)return;try{let n=JSON.parse(e.newValue);if(n?.tournaments?.length){state={...n,fun:{...defaultFun(),...(n.fun||{})}};render()}}catch(e){}});
 render();if('serviceWorker'in navigator&&location.protocol==='https:'){navigator.serviceWorker.register('./sw.js').catch(()=>{})}
 })();
 </script>
