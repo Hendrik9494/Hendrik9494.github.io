@@ -1,0 +1,18 @@
+{
+  "name": "Wochenend-Olympiade",
+  "short_name": "Olympiade",
+  "description": "Acht Einzelspieler, beliebige Disziplinen und automatische Punktevergabe.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f6f3",
+  "theme_color": "#122138",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
